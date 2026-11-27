@@ -1,0 +1,57 @@
+/* style.css — TruePrice Friday: charcoal + signal yellow, big prices. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif; background: #14161a; color: #f2f3f5; }
+.hero { padding: 28px 20px 18px; background: linear-gradient(135deg, #1d2129 0%, #14161a 60%); border-bottom: 4px solid #ffd60a; }
+.brand { margin: 0; font-weight: 800; letter-spacing: .14em; color: #ffd60a; font-size: 15px; }
+.brand span { color: #f2f3f5; }
+.hero h1 { margin: 10px 0 8px; font-size: clamp(24px, 4.5vw, 40px); line-height: 1.12; max-width: 20em; }
+.sub { margin: 0; max-width: 62em; color: #c9cdd4; font-size: 15px; line-height: 1.5; }
+.stats { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.stat { background: #232833; border: 1px solid #343b49; border-radius: 12px; padding: 10px 16px; min-width: 130px; }
+.stat strong { display: block; font-size: 26px; color: #ffd60a; }
+.stat span { font-size: 12px; color: #aeb4bf; text-transform: uppercase; letter-spacing: .06em; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 14px 20px 0; }
+.chips button { background: #232833; color: #f2f3f5; border: 1px solid #3a4152; border-radius: 999px; padding: 8px 14px; font-size: 14px; cursor: pointer; }
+.chips button:hover { border-color: #ffd60a; color: #ffd60a; }
+.chips button.active { background: #ffd60a; color: #14161a; border-color: #ffd60a; font-weight: 700; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px; padding: 14px 20px; align-items: end; }
+.controls label { display: flex; flex-direction: column; gap: 5px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: #aeb4bf; }
+.controls .search-label { flex: 1 1 240px; }
+.controls input, .controls select { background: #232833; color: #f2f3f5; border: 1px solid #3a4152; border-radius: 9px; padding: 10px 12px; font-size: 15px; text-transform: none; letter-spacing: 0; }
+.result-line { padding: 0 20px; color: #ffd60a; font-size: 14px; margin: 2px 0 10px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; padding: 0 20px 20px; }
+.card { background: #1e222b; border: 1px solid #313847; border-top: 5px solid #6b7280; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 7px; }
+.card.verdict-new-low { border-top-color: #2ee66b; }
+.card.verdict-strong { border-top-color: #38bdf8; }
+.card.verdict-fair { border-top-color: #fbbf24; }
+.card.verdict-weak { border-top-color: #f87171; }
+.card-top { display: flex; justify-content: space-between; align-items: center; }
+.cat { font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: #aeb4bf; }
+.off { background: #ffd60a; color: #14161a; font-weight: 800; border-radius: 8px; padding: 3px 9px; font-size: 16px; }
+.name { margin: 0; font-size: 18px; line-height: 1.3; }
+.store { margin: 0; color: #c9cdd4; font-size: 14px; }
+.prices { margin: 2px 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.now { font-size: 30px; font-weight: 800; color: #fff; }
+.was { text-decoration: line-through; color: #8b929e; font-size: 16px; }
+.save { color: #2ee66b; font-weight: 700; font-size: 14px; }
+.verdict { margin: 0; font-size: 13.5px; line-height: 1.45; color: #d7dbe1; }
+.badge { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .05em; border-radius: 6px; padding: 2px 7px; margin-right: 5px; color: #14161a; background: #38bdf8; }
+.verdict-new-low .badge, .b-new-low { background: #2ee66b; }
+.verdict-strong .badge, .b-strong { background: #38bdf8; }
+.verdict-fair .badge, .b-fair { background: #fbbf24; }
+.verdict-weak .badge, .b-weak { background: #f87171; }
+.meta { margin: 0; font-size: 11.5px; color: #8b929e; line-height: 1.4; }
+.go { margin-top: auto; background: #ffd60a; color: #14161a; font-weight: 800; text-align: center; border-radius: 9px; padding: 10px; text-decoration: none; font-size: 15px; }
+.go:hover { background: #ffe14d; }
+.guide { margin: 6px 20px 20px; background: #1e222b; border: 1px solid #313847; border-radius: 14px; padding: 18px; }
+.guide h2 { margin: 0 0 10px; font-size: 19px; }
+.guide-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px; }
+.guide-row p { margin: 0; font-size: 13.5px; line-height: 1.5; color: #d7dbe1; }
+.fineprint { font-size: 12px; color: #8b929e; line-height: 1.55; margin: 12px 0 0; }
+footer { padding: 0 20px 26px; color: #6f7684; font-size: 12px; }
+@media (max-width: 560px) {
+  .grid { grid-template-columns: 1fr; padding: 0 12px 14px; }
+  .controls, .chips, .hero { padding-left: 12px; padding-right: 12px; }
+  .guide { margin: 6px 12px 14px; }
+  .now { font-size: 27px; }
+}

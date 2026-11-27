@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TruePrice Friday — Real Black Friday Deals, Checked Nov 27, 2026</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="brand">TRUEPRICE <span>FRIDAY</span></p>
+  <h1>Black Friday deals, checked by hand — with the duds labelled too.</h1>
+  <p class="sub">Every price below was read today, <strong>Friday Nov 27, 2026</strong>, in a named deals source for that store. Each deal carries an honest verdict: a true all-time low, a strong cut, a fair one, or a thin discount dressed up as a doorbuster.</p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<nav class="chips" aria-label="Categories">
+  <button data-cat="All">All deals</button>
+  <button data-cat="Audio">Audio</button>
+  <button data-cat="TVs">TVs</button>
+  <button data-cat="Computing">Computing</button>
+  <button data-cat="Gaming">Gaming</button>
+  <button data-cat="Smart Home">Smart Home</button>
+  <button data-cat="Kitchen &amp; Home">Kitchen &amp; Home</button>
+</nav>
+
+<section class="controls" aria-label="Search and filters">
+  <label class="search-label">Search deals
+    <input id="search" type="search" placeholder="Try “AirPods”, “Dyson”, “OLED”…" autocomplete="off">
+  </label>
+  <label>Category <select id="category"></select></label>
+  <label>Store <select id="store"></select></label>
+  <label>Discount
+    <select id="discount">
+      <option value="0">Any discount</option>
+      <option value="20">20% off or more</option>
+      <option value="40">40% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+  </label>
+  <label>Verdict
+    <select id="verdict">
+      <option value="All">Any verdict</option>
+      <option value="new-low">NEW LOW only</option>
+      <option value="strong">STRONG DEAL only</option>
+      <option value="fair">FAIR only</option>
+      <option value="weak">THIN DEAL only</option>
+    </select>
+  </label>
+  <label>Sort by
+    <select id="sort">
+      <option value="discount">Biggest discount %</option>
+      <option value="verdict">Best verdict first</option>
+      <option value="saving">Biggest saving $</option>
+      <option value="priceLow">Lowest price</option>
+    </select>
+  </label>
+</section>
+
+<p class="result-line" id="result-line"></p>
+<main class="grid" id="grid"></main>
+
+<section class="guide">
+  <h2>How to read the verdicts</h2>
+  <div class="guide-row">
+    <p><span class="badge b-new-low">NEW LOW</span> The lowest price we or the cited tracker have seen for this exact product.</p>
+    <p><span class="badge b-strong">STRONG DEAL</span> A deep cut against the real usual price, not a padded list price.</p>
+    <p><span class="badge b-fair">FAIR</span> A genuine saving, but similar prices recur through the year.</p>
+    <p><span class="badge b-weak">THIN DEAL</span> The percentage looks loud but the saving is small — read the evidence before buying.</p>
+  </div>
+  <p class="fineprint">Prices checked Nov 27, 2026, 16:35 JST from the source named on each card (CNN Underscored, Benzinga, Popular Science, Best Buy's Black Friday release, 9to5Google, UltraGamerZ, 2ndShift, Tom's Guide roundups). Black Friday prices move hourly — the store link on each card opens that store's own search for the product so you can confirm the live price before paying. Cyber Monday is Nov 30, 2026; several of these prices run through then.</p>
+</section>
+
+<footer>TruePrice Friday — an original, hand-checked deal finder. No prices are scraped live; each was verified by a person (and an agent) on the day shown.</footer>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
