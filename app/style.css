@@ -1,14 +1,24 @@
 /* style.css — TruePrice Friday: charcoal + signal yellow, big prices. */
 * { box-sizing: border-box; }
 body { margin: 0; font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif; background: #14161a; color: #f2f3f5; }
-.hero { padding: 28px 20px 18px; background: linear-gradient(135deg, #1d2129 0%, #14161a 60%); border-bottom: 4px solid #ffd60a; }
+.hero { padding: 18px 20px 12px; background: linear-gradient(135deg, #1d2129 0%, #14161a 60%); border-bottom: 4px solid #ffd60a; }
 .brand { margin: 0; font-weight: 800; letter-spacing: .14em; color: #ffd60a; font-size: 15px; }
 .brand span { color: #f2f3f5; }
-.hero h1 { margin: 10px 0 8px; font-size: clamp(24px, 4.5vw, 40px); line-height: 1.12; max-width: 20em; }
-.sub { margin: 0; max-width: 62em; color: #c9cdd4; font-size: 15px; line-height: 1.5; }
-.stats { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
-.stat { background: #232833; border: 1px solid #343b49; border-radius: 12px; padding: 10px 16px; min-width: 130px; }
-.stat strong { display: block; font-size: 26px; color: #ffd60a; }
+.brand .edition { color: #14161a; background: #ffd60a; border-radius: 6px; padding: 2px 8px; letter-spacing: .05em; margin-left: 8px; }
+.hero h1 { margin: 8px 0 6px; font-size: clamp(23px, 4vw, 34px); line-height: 1.12; max-width: 24em; }
+.sub { margin: 0; max-width: 62em; color: #c9cdd4; font-size: 14px; line-height: 1.45; }
+.stats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.stat { background: #232833; border: 1px solid #343b49; border-radius: 12px; padding: 7px 14px; min-width: 120px; }
+.stat strong { display: block; font-size: 23px; color: #ffd60a; }
+.featured { padding: 14px 20px 4px; }
+.feat-head { margin: 0 0 10px; font-size: 19px; color: #ffd60a; letter-spacing: .02em; }
+.feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.feat { background: linear-gradient(160deg, #2a2113 0%, #1e222b 55%); border: 2px solid #ffd60a; border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.feat-top { display: flex; justify-content: space-between; align-items: center; }
+.feat-name { margin: 0; font-size: 19px; line-height: 1.25; }
+.feat .now { font-size: 34px; }
+.feat .go { margin-top: auto; }
+.cm-note { margin: 12px 0 2px; font-size: 13.5px; color: #c9cdd4; line-height: 1.5; background: #1e222b; border: 1px dashed #ffd60a; border-radius: 10px; padding: 10px 14px; }
 .stat span { font-size: 12px; color: #aeb4bf; text-transform: uppercase; letter-spacing: .06em; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 14px 20px 0; }
 .chips button { background: #232833; color: #f2f3f5; border: 1px solid #3a4152; border-radius: 999px; padding: 8px 14px; font-size: 14px; cursor: pointer; }
@@ -19,7 +29,7 @@ body { margin: 0; font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
 .controls .search-label { flex: 1 1 240px; }
 .controls input, .controls select { background: #232833; color: #f2f3f5; border: 1px solid #3a4152; border-radius: 9px; padding: 10px 12px; font-size: 15px; text-transform: none; letter-spacing: 0; }
 .result-line { padding: 0 20px; color: #ffd60a; font-size: 14px; margin: 2px 0 10px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; padding: 0 20px 20px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(272px, 1fr)); gap: 12px; padding: 0 20px 20px; }
 .card { background: #1e222b; border: 1px solid #313847; border-top: 5px solid #6b7280; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 7px; }
 .card.verdict-new-low { border-top-color: #2ee66b; }
 .card.verdict-strong { border-top-color: #38bdf8; }
@@ -51,6 +61,7 @@ body { margin: 0; font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
 footer { padding: 0 20px 26px; color: #6f7684; font-size: 12px; }
 @media (max-width: 560px) {
   .grid { grid-template-columns: 1fr; padding: 0 12px 14px; }
+  .featured { padding: 12px 12px 2px; }
   .controls, .chips, .hero { padding-left: 12px; padding-right: 12px; }
   .guide { margin: 6px 12px 14px; }
   .now { font-size: 27px; }

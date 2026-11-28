@@ -6,7 +6,7 @@
 
 Bounty: https://make.fun/bounty/black-friday-deal-finder-01
 
-An original, hand-checked Black Friday deal finder. Every one of its 35 deals was found and price-checked on **Friday, Nov 27, 2026** in a named deals source for its store (CNN Underscored, Benzinga, Popular Science, Best Buy's Black Friday release, 9to5Google, UltraGamerZ, 2ndShift, Tom's Guide roundups). Each card shows the product, store, sale price, usual price, discount %, dollar saving, the time the price was checked, the source it was read in, a link to that store, and an honest verdict — **NEW LOW**, **STRONG DEAL**, **FAIR**, or **THIN DEAL** — with the evidence for the verdict on the card.
+An original, hand-checked Black Friday deal finder. Every one of its 48 deals was found and price-checked on **Nov 27–28, 2026** in a named deals source for its store (CNN Underscored, Benzinga, Popular Science, Best Buy's Black Friday release, 9to5Google, UltraGamerZ, 2ndShift, Tom's Guide roundups, The Shortcut, AppleScoop, PostThisDeal, Passionate Penny Pincher). The weekend edition adds a featured top-cuts strip, a Toys & Games category and a Cyber Monday note. Each card shows the product, store, sale price, usual price, discount %, dollar saving, the time the price was checked, the source it was read in, a link to that store, and an honest verdict — **NEW LOW**, **STRONG DEAL**, **FAIR**, or **THIN DEAL** — with the evidence for the verdict on the card.
 
 ## Features
 

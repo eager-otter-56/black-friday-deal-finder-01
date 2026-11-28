@@ -4,7 +4,7 @@
 
 import { DEALS } from "./deals.js";
 import { categoriesOf, storesOf, filterDeals, sortDeals, summarise } from "./logic.js";
-import { dealCard, statsBar, resultLine } from "./render.js";
+import { dealCard, statsBar, resultLine, featuredStrip } from "./render.js";
 
 const state = { query: "", category: "All", store: "All", minDiscount: 0, verdict: "All", sort: "discount" };
 
@@ -32,6 +32,7 @@ function render() {
   const active = state.query || state.category !== "All" || state.store !== "All" || state.minDiscount > 0 || state.verdict !== "All";
   document.getElementById("result-line").textContent = resultLine(filtered.length, DEALS.length, active);
   document.getElementById("stats").innerHTML = statsBar(summarise(DEALS));
+  document.getElementById("featured").innerHTML = featuredStrip(DEALS);
 }
 
 function bind() {
